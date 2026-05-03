@@ -1,0 +1,12 @@
+venv/
+.venv/
+.idea/
+.pytest_cache/
+.pytest_tmp/
+__pycache__/
+*.pyc
+
+outputs/*.md
+outputs/*.txt
+outputs/*.jsonl
+!outputs/.gitkeep
