@@ -29,7 +29,10 @@ def run_executor(state: Dict[str, Any], llm: Any) -> Dict[str, Any]:
         "Action Items:\n"
         "- <item>\n"
         "- <item>\n\n"
-        "Use the provided steps and keep the output clear, realistic, and student-friendly."
+        "Use the provided steps and keep the output clear, realistic, and student-friendly.\n"
+        "If review feedback says any requested topics are missing, add clear Action Items "
+        "using those exact topic words, such as Report, Demo, Testing, or Submission. "
+        "Do not write the word REVISE in the final output.\n\n"
         f"{feedback_block}\n"
         f"Steps:\n{state['steps']}"
     )
